@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "openpolicy-twitterpl" {
+data "aws_iam_policy_document" "openpolicy-wwwtwitterpl" {
   statement {
     sid = "PublicReadGetObject"
     effect = "Allow"
@@ -8,7 +8,7 @@ data "aws_iam_policy_document" "openpolicy-twitterpl" {
     ]
 
     resources = [
-      "${aws_s3_bucket.twitterpl.arn}/*",
+      "${aws_s3_bucket.wwwtwitterpl.arn}/*",
     ]
   }
 }
