@@ -1,5 +1,5 @@
 resource "aws_route53_record" "r53_twitterpl" {
-  zone_id = "Z09733357QJC6DUNF5SR"
+  zone_id = local.twitterpl_zoneid
   name    = "twitter.pl"
   type    = "A"
   allow_overwrite = true
@@ -12,7 +12,7 @@ resource "aws_route53_record" "r53_twitterpl" {
 }
 
 resource "aws_route53_record" "r53_wwwtwitterpl" {
-  zone_id = "Z09733357QJC6DUNF5SR"
+  zone_id = local.twitterpl_zoneid
   name    = "www.twitter.pl"
   type    = "A"
   allow_overwrite = true
